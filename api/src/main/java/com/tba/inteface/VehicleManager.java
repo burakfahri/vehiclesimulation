@@ -1,5 +1,6 @@
 package com.tba.inteface;
 
+import com.tba.exception.EmptyInstanceException;
 import com.tba.model.Point;
 import com.tba.model.Vector;
 import com.tba.model.Id;
@@ -8,17 +9,17 @@ import java.util.Map;
 
 public interface VehicleManager {
 
-    VehicleManager getVehicleManager();
+    VehicleManager getInstance();
 
-    Map<Integer,Vehicle> getVehicles();
+    Map<Id,Vehicle> getVehicles() throws EmptyInstanceException;
 
-    Boolean addVehicle(Vehicle vehicle);
+    Boolean addVehicle(Vehicle vehicle) throws EmptyInstanceException;
 
-    Boolean removeVehicle(Id id);
+    Boolean removeVehicle(Id id) throws EmptyInstanceException;
 
-    Point getCoordinateOfVehicle(Id id);
+    Point getCoordinateOfVehicle(Id id) throws EmptyInstanceException;
 
-    Boolean changeDirectionOfVehicle(Vector vector);
+    Boolean changeDirectionOfVehicle(Id id,Vector vector) throws EmptyInstanceException;
 
 
 }
