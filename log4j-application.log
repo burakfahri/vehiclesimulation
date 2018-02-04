@@ -1,0 +1,55 @@
+2018-02-04 02:29:54 DEBUG Test:11 - hoo
+2018-02-04 02:29:54 INFO  Vehicle:17 - Initializing the vehicle
+2018-02-04 02:29:54 INFO  Vehicle:17 - Vector{startPoint=Point{x=1, y=-1}, endPoint=Point{x=1, y=-1}}
+2018-02-04 02:29:55 INFO  Vehicle:17 - Vector{startPoint=Point{x=2, y=-2}, endPoint=Point{x=2, y=-2}}
+2018-02-04 02:29:56 INFO  Vehicle:17 - Vector{startPoint=Point{x=3, y=-3}, endPoint=Point{x=3, y=-3}}
+2018-02-04 02:29:57 INFO  Vehicle:17 - Vector{startPoint=Point{x=4, y=-4}, endPoint=Point{x=4, y=-4}}
+2018-02-04 02:29:58 INFO  Vehicle:17 - Vector{startPoint=Point{x=5, y=-5}, endPoint=Point{x=5, y=-5}}
+2018-02-04 02:29:59 INFO  Vehicle:17 - Vector{startPoint=Point{x=6, y=-6}, endPoint=Point{x=6, y=-6}}
+2018-02-04 02:30:00 INFO  Vehicle:17 - Vector{startPoint=Point{x=7, y=-7}, endPoint=Point{x=7, y=-7}}
+2018-02-04 02:30:01 INFO  Vehicle:17 - Vector{startPoint=Point{x=8, y=-8}, endPoint=Point{x=8, y=-8}}
+2018-02-04 02:30:02 INFO  Vehicle:17 - Vector{startPoint=Point{x=9, y=-9}, endPoint=Point{x=9, y=-9}}
+2018-02-04 02:30:03 INFO  Vehicle:17 - Vector{startPoint=Point{x=10, y=-10}, endPoint=Point{x=10, y=-10}}
+2018-02-04 02:30:04 INFO  Vehicle:17 - Vector{startPoint=Point{x=11, y=-11}, endPoint=Point{x=11, y=-11}}
+2018-02-04 02:30:05 INFO  Vehicle:17 - Vector{startPoint=Point{x=12, y=-12}, endPoint=Point{x=12, y=-12}}
+2018-02-04 02:30:06 INFO  Vehicle:17 - Vector{startPoint=Point{x=13, y=-13}, endPoint=Point{x=13, y=-13}}
+2018-02-04 02:30:07 INFO  Vehicle:17 - Vector{startPoint=Point{x=14, y=-14}, endPoint=Point{x=14, y=-14}}
+2018-02-04 02:30:08 INFO  Vehicle:17 - Vector{startPoint=Point{x=15, y=-15}, endPoint=Point{x=15, y=-15}}
+2018-02-04 02:30:09 INFO  Vehicle:17 - Vector{startPoint=Point{x=16, y=-16}, endPoint=Point{x=16, y=-16}}
+2018-02-04 02:30:10 INFO  Vehicle:17 - Vector{startPoint=Point{x=17, y=-17}, endPoint=Point{x=17, y=-17}}
+2018-02-04 02:30:11 INFO  Vehicle:17 - Vector{startPoint=Point{x=18, y=-18}, endPoint=Point{x=18, y=-18}}
+2018-02-04 02:30:12 INFO  Vehicle:17 - Vector{startPoint=Point{x=19, y=-19}, endPoint=Point{x=19, y=-19}}
+2018-02-04 02:30:13 INFO  Vehicle:17 - Vector{startPoint=Point{x=20, y=-20}, endPoint=Point{x=20, y=-20}}
+2018-02-04 02:30:14 INFO  Vehicle:17 - Vector{startPoint=Point{x=21, y=-21}, endPoint=Point{x=21, y=-21}}
+2018-02-04 02:30:15 INFO  Vehicle:17 - Vector{startPoint=Point{x=22, y=-22}, endPoint=Point{x=22, y=-22}}
+2018-02-04 02:30:16 INFO  Vehicle:17 - Vector{startPoint=Point{x=23, y=-23}, endPoint=Point{x=23, y=-23}}
+2018-02-04 02:30:17 INFO  Vehicle:17 - Vector{startPoint=Point{x=24, y=-24}, endPoint=Point{x=24, y=-24}}
+2018-02-04 02:30:18 INFO  Vehicle:17 - Vector{startPoint=Point{x=25, y=-25}, endPoint=Point{x=25, y=-25}}
+2018-02-04 02:30:19 INFO  Vehicle:17 - Vector{startPoint=Point{x=26, y=-26}, endPoint=Point{x=26, y=-26}}
+2018-02-04 02:30:20 INFO  Vehicle:17 - Vector{startPoint=Point{x=27, y=-27}, endPoint=Point{x=27, y=-27}}
+2018-02-04 02:30:21 INFO  Vehicle:17 - Vector{startPoint=Point{x=28, y=-28}, endPoint=Point{x=28, y=-28}}
+2018-02-04 02:30:22 INFO  Vehicle:17 - Vector{startPoint=Point{x=29, y=-29}, endPoint=Point{x=29, y=-29}}
+2018-02-04 02:30:23 INFO  Vehicle:17 - Vector{startPoint=Point{x=30, y=-30}, endPoint=Point{x=30, y=-30}}
+2018-02-04 02:30:24 INFO  Vehicle:17 - Vector{startPoint=Point{x=31, y=-31}, endPoint=Point{x=31, y=-31}}
+2018-02-04 02:32:57 DEBUG Test:11 - hoo
+2018-02-04 02:32:57 INFO  Vehicle:17 - Initializing the vehicle
+2018-02-04 02:32:57 INFO  Vehicle:17 - Vector{startPoint=Point{x=1, y=0}, endPoint=Point{x=1, y=0}}
+2018-02-04 02:32:58 INFO  Vehicle:17 - Vector{startPoint=Point{x=2, y=0}, endPoint=Point{x=2, y=0}}
+2018-02-04 02:32:59 INFO  Vehicle:17 - Vector{startPoint=Point{x=3, y=0}, endPoint=Point{x=3, y=0}}
+2018-02-04 02:33:00 INFO  Vehicle:17 - Vector{startPoint=Point{x=4, y=0}, endPoint=Point{x=4, y=0}}
+2018-02-04 02:33:01 INFO  Vehicle:17 - Vector{startPoint=Point{x=5, y=0}, endPoint=Point{x=5, y=0}}
+2018-02-04 02:33:02 INFO  Vehicle:17 - Vector{startPoint=Point{x=6, y=0}, endPoint=Point{x=6, y=0}}
+2018-02-04 02:33:03 INFO  Vehicle:17 - Vector{startPoint=Point{x=7, y=0}, endPoint=Point{x=7, y=0}}
+2018-02-04 02:33:04 INFO  Vehicle:17 - Vector{startPoint=Point{x=8, y=0}, endPoint=Point{x=8, y=0}}
+2018-02-04 02:33:05 INFO  Vehicle:17 - Vector{startPoint=Point{x=9, y=0}, endPoint=Point{x=9, y=0}}
+2018-02-04 02:39:59 DEBUG Test:11 - hoo
+2018-02-04 02:39:59 INFO  Vehicle:17 - Initializing the vehicle
+2018-02-04 02:39:59 INFO  Vehicle:17 - Vector{startPoint=Point{x=0, y=0}, endPoint=Point{x=1, y=0}}
+2018-02-04 02:40:00 INFO  Vehicle:17 - Vector{startPoint=Point{x=0, y=0}, endPoint=Point{x=2, y=0}}
+2018-02-04 02:40:01 INFO  Vehicle:17 - Vector{startPoint=Point{x=0, y=0}, endPoint=Point{x=3, y=0}}
+2018-02-04 02:40:02 INFO  Vehicle:17 - Vector{startPoint=Point{x=0, y=0}, endPoint=Point{x=4, y=0}}
+2018-02-04 02:40:03 INFO  Vehicle:17 - Vector{startPoint=Point{x=0, y=0}, endPoint=Point{x=5, y=0}}
+2018-02-04 02:40:04 INFO  Vehicle:17 - Vector{startPoint=Point{x=0, y=0}, endPoint=Point{x=6, y=0}}
+2018-02-04 02:40:05 INFO  Vehicle:17 - Vector{startPoint=Point{x=0, y=0}, endPoint=Point{x=7, y=0}}
+2018-02-04 02:40:06 INFO  Vehicle:17 - Vector{startPoint=Point{x=0, y=0}, endPoint=Point{x=8, y=0}}
+2018-02-04 02:40:07 INFO  Vehicle:17 - Vector{startPoint=Point{x=0, y=0}, endPoint=Point{x=9, y=0}}
