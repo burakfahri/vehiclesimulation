@@ -2,6 +2,9 @@ package com.tba.model;
 
 import java.util.Objects;
 
+/**
+ * holds the x and y coordinate
+ */
 public class Point implements  Cloneable{
     private Integer x;
     private Integer y;

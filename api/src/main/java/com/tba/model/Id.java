@@ -2,6 +2,9 @@ package com.tba.model;
 
 import java.util.Objects;
 
+/**
+ * encapsulate the id of vehicle
+ */
 public class Id {
     int uid;
 

@@ -86,11 +86,28 @@ public class VehicleImpl implements Vehicle{
                 movement.setEndPoint(startPoint.clone());
             }
             movement.getEndPoint().add(direction.getMovement());
-            LogUtil.setInfoLog(logger,movement.toString());
         }
         catch (Exception e)
         {
             LogUtil.setErrorLog(logger,e.getMessage());
         }
+    }
+
+    public Vehicle clone() {
+        try {
+            return (Vehicle) super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+            throw new RuntimeException();
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "VehicleImpl{" +
+                "id=" + id +
+                ", direction=" + direction +
+                ", movement=" + movement +
+                '}';
     }
 }

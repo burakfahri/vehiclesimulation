@@ -2,6 +2,9 @@ package com.tba.model;
 
 import java.util.Objects;
 
+/**
+ * holds the vector to define a direction or something else
+ */
 public class Vector {
     private Point startPoint;
     private Point endPoint;
