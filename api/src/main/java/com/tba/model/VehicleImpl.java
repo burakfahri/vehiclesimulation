@@ -5,6 +5,8 @@ import com.tba.inteface.Vehicle;
 import com.tba.util.LogUtil;
 import org.apache.log4j.Logger;
 
+import java.util.Objects;
+
 
 public class VehicleImpl implements Vehicle{
     Logger logger = Logger.getLogger(Vehicle.class);
@@ -100,6 +102,23 @@ public class VehicleImpl implements Vehicle{
             e.printStackTrace();
             throw new RuntimeException();
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        VehicleImpl vehicle = (VehicleImpl) o;
+        return Objects.equals(logger, vehicle.logger) &&
+                Objects.equals(id, vehicle.id) &&
+                Objects.equals(direction, vehicle.direction) &&
+                Objects.equals(movement, vehicle.movement);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(logger, id, direction, movement);
     }
 
     @Override

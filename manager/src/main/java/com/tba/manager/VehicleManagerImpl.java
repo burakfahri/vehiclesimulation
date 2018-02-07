@@ -42,6 +42,9 @@ public class VehicleManagerImpl implements VehicleManager{
     @Override
     public Vehicle getVehicle(Id id) throws EmptyInstanceException {
         checkInstance(Thread.currentThread().getStackTrace()[1].getMethodName());
+        Vehicle vehicle = vehicleMap.get(id);
+        if(vehicle == null)
+            return null;
         return vehicleMap.get(id).clone();
     }
 

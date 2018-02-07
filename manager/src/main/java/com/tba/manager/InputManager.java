@@ -42,7 +42,7 @@ public class InputManager {
         if (input == null)
             return "Change a vehicle direction \\\"change_direction id(int) vector\\\" - \\\"change_direction 1 ((0,0),(1,0)) \\\"\"";
         String [] inputArr = input.split(" ");
-        Vector v = new Vector();
+        Vector v = null;
         Id id = null;
         for (String s : inputArr) {
             if (s.toLowerCase().equals("change_direction"))
@@ -70,6 +70,7 @@ public class InputManager {
                     y = Integer.parseInt(ySArr[0]);
                     endPoint.setX(x);
                     endPoint.setY(y);
+                    v = new Vector();
                     v.setStartPoint(startPoint);
                     v.setEndPoint(endPoint);
 
@@ -89,6 +90,11 @@ public class InputManager {
                    return "There is an illegal character in the command";
                 }
             }
+        }
+        if(v == null || id == null)
+        {
+            LogUtil.setErrorLog(logger,"VehicleManager must be instantiate first");
+            return null;
         }
         VehicleManager vehicleManager = VehicleManagerImpl.getInstance();
         try {
@@ -116,6 +122,10 @@ public class InputManager {
                 return "Illegal character "+s;
             }
         }
+        if(id == null) {
+            LogUtil.setErrorLog(logger, "VehicleManager must be instantiate first");
+            return null;
+        }
         VehicleManager vehicleManager = VehicleManagerImpl.getInstance();
         try {
             vehicleManager.removeVehicle(id);
@@ -130,8 +140,8 @@ public class InputManager {
             return "Add a vehicle : \"add coordinate(point) direction(vector)\" - \"add (0,0) ((0,0),(1,1))\"  command \n";
         String [] inputArr = input.split(" ");
         System.out.println(input);
-        Point p = new Point();
-        Vector v = new Vector();
+        Point p = null;
+        Vector v = null;
         for (String s : inputArr)
         {
             if (s.toLowerCase().equals("add"))
@@ -145,6 +155,7 @@ public class InputManager {
 
                     String[] ySArr = coordinate[1].split("\\)");
                     Integer y = Integer.parseInt(ySArr[0]);
+                    p = new Point();
                     p.setX(x);
                     p.setY(y);
                 }
@@ -173,6 +184,7 @@ public class InputManager {
                     y = Integer.parseInt(ySArr[0]);
                     endPoint.setX(x);
                     endPoint.setY(y);
+                    v = new Vector();
                     v.setStartPoint(startPoint);
                     v.setEndPoint(endPoint);
                     System.out.println("vector added "+v);
@@ -185,6 +197,11 @@ public class InputManager {
             }
             else
                 return "Illegal character "+s;
+        }
+        if(v == null || p == null)
+        {
+            LogUtil.setErrorLog(logger,"VehicleManager must be instantiate first");
+            return null;
         }
         VehicleManager vehicleManager = VehicleManagerImpl.getInstance();
         try {
