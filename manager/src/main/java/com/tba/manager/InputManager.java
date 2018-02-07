@@ -50,7 +50,7 @@ public class InputManager {
             System.out.println(s);
             String[] coordinate = s.split(",");
 
-            if(coordinate.length == 4)
+            if(coordinate.length == 4)//parse direction which is vector
             {
                 try {
                     Point startPoint = new Point();
@@ -80,7 +80,7 @@ public class InputManager {
                     return "There is an error while parsing vector data \nVector must be in ((X,Y),(X,Y)) format\n ";
                 }
             }
-            else
+            else // it must be id ,or illegal character
             {
                 try{
                     id = new Id(Integer.parseInt(s));
@@ -135,6 +135,24 @@ public class InputManager {
         return "Vehicle removed correctly";
     }
 
+    private static Id getSuitableId(VehicleManager vehicleManager,Map<Id,Vehicle> vehicleMap) throws EmptyInstanceException {
+        if(vehicleMap.isEmpty() ) {
+            return new Id(1);
+        }
+        for (int i =1 ; i< vehicleMap.size()+2; i++) {
+            try {
+                if(vehicleManager.getVehicle(new Id(i)) == null)
+                {
+                    return new Id(i);
+                }
+            } catch (EmptyInstanceException e) {
+                throw new EmptyInstanceException();
+            }
+        }
+        return new Id(vehicleMap.size()+3);
+
+    }
+
     private static  String add(String input) {
         if (input == null)
             return "Add a vehicle : \"add coordinate(point) direction(vector)\" - \"add (0,0) ((0,0),(1,1))\"  command \n";
@@ -147,7 +165,7 @@ public class InputManager {
             if (s.toLowerCase().equals("add"))
                 continue;
             String[] coordinate = s.split(",");
-            if(coordinate.length == 2)
+            if(coordinate.length == 2) //parse coordinate point
             {
                 try {
                     String[] xSArr = coordinate[0].split("\\(");
@@ -164,7 +182,7 @@ public class InputManager {
                     return "There is an error while parsing coordinate data \nPoint must be in (X,Y) format\n ";
                 }
             }
-            else if(coordinate.length == 4)
+            else if(coordinate.length == 4) // parse direction which is vector
             {
                 try {
                     Point startPoint = new Point();
@@ -205,18 +223,8 @@ public class InputManager {
         }
         VehicleManager vehicleManager = VehicleManagerImpl.getInstance();
         try {
-            Id id = null;
             Map<Id,Vehicle> vehicleMap = vehicleManager.getVehicles();
-            if(vehicleMap.isEmpty() ) {
-                id =new Id(1);
-            }
-            else {
-                for (int i =1 ; i< vehicleManager.getVehicles().size()+2; i++)
-                    if(vehicleManager.getVehicle(new Id(i)) == null)
-                    {
-                        id = new Id(i);
-                    }
-            }
+            Id id = getSuitableId(vehicleManager,vehicleMap);
             Vehicle vehicle = new VehicleImpl(id,v,p);
             vehicleManager.addVehicle(vehicle);
         } catch (EmptyInstanceException e) {
